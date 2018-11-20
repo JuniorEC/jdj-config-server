@@ -19,7 +19,7 @@ security:
             access-token-validity-seconds: 1800
             authorized-grant-types: password,refresh_token
             client-id: coderef
-            client-secret: 123456
+            client-secret: $2y$04$qzPid5UhW3QoppK1OOlojOCSVy0vS/yeDOHAMQ.hSMyLwm9mBVyxG
             resource-ids: resources
             scope: read,write
 
@@ -30,11 +30,11 @@ spring:
         password: 
         platform: mysql
         schema: classpath:/sql/schema.sql
-        url: jdbc:mysql://localhost/oauth2?useTimezone=true&serverTimezone=UTC&verifyServerCertificate=false&useSSL=false&requireSSL=false
+        url: jdbc:mysql://localhost:3306/oauth2?useTimezone=true&serverTimezone=UTC&verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
         hibernate:
-            ddl-auto: update
+            ddl-auto: none
         show-sql: true
