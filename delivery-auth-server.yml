@@ -25,11 +25,9 @@ security:
 
 spring:
     datasource:
-        data: classpath:/data.sql
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: 
         platform: mysql
-        schema: classpath:/schema.sql
         url: jdbc:mysql://localhost/oauth2?useTimezone=true&serverTimezone=UTC
         username: root
     jpa:
