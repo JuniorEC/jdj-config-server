@@ -30,7 +30,7 @@ spring:
         password: 
         platform: mysql
         schema: classpath:sql/schema.sql
-        url: jdbc:mysql://localhost/oauth2?useTimezone=true&serverTimezone=UTC
+        url: jdbc:mysql://localhost/oauth2?useTimezone=true&serverTimezone=UTC&verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
